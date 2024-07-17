@@ -15,9 +15,9 @@ connection.query(sql,body,(err,result)=>{
         callback(err,result)
 })
 },
-modify:function(id,body,callback){
-    const sql =`UPDATE cars SET ? WEHERE id=${id}`
-    connection.query(sql,body,(err,result)=>{
+modify:function(body,id,callback){
+    const sql ='UPDATE cars SET ? WHERE id=?'
+    connection.query(sql,[body,id],(err,result)=>{
         callback(err,result)
     })
 },

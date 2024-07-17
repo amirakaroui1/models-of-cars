@@ -30,7 +30,8 @@ const[avg_horsepower,setavg_horsepower]=useState('')
 
 
   return (
-    <div>
+    <div class="card">
+        <div class="card-content">
        <input placeholder="name" onChange={(e)=>setname(e.target.value)} />
        <input placeholder="imageUrl" onChange={(e)=>setimageUrl(e.target.value)} />
        <input placeholder="num_model" onChange={(e)=>setnum_model(e.target.value)}/>
@@ -39,6 +40,7 @@ const[avg_horsepower,setavg_horsepower]=useState('')
       <input placeholder="avg_price" onChange={(e)=>setavg_price(e.target.value)}/>
       <input placeholder="avg_horsepower" onChange={(e)=>setavg_horsepower(e.target.value)}/>
       <button onClick={()=>added()}>Add Car</button>
+    </div>
     </div>
   );
 }

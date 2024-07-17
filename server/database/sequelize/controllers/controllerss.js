@@ -12,7 +12,10 @@ module.exports={
         })
     },
     update: function(req, res) {
-        modify(req.params.id, req.body, (err, result) => {  // Updated function name to `modify` for updating
+        const id=req.params.id
+        const body =req.body
+        console.log(id)
+        modify(body ,id, (err, result) => {  // Updated function name to `modify` for updating
             err ? console.error(err) : res.send(result);
         });
 },
