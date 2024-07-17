@@ -1,178 +1,175 @@
-body, html, nav, ul, li, a {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Navbar container */
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-    font-family: 'Arial', sans-serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Navbar links */
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Hover effect for links */
-nav a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-    color: #ffcc00;
-}
-
-/* Active link styling */
-nav a.active {
-    background-color: #ffcc00;
-    color: #d9d136;
-    border-radius: 5px;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        padding: 15px;
-        text-align: center;
-        width: 100%;
-    }
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-image: url("https://shorturl.at/90LS1");
-    background-repeat: no-repeat;
-    background-size: cover; /* Cover the entire background */
-    background-position: center; /* Center the background image */
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #e8dfdf;
-    text-align: center;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center items horizontally */
-  }
-  
-  li {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Adjust width as needed */
-    text-align: center;
-  }
-  
-  img {
-    width: 100%; /* Ensure all images fill their container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any default inline spacing */
-    border-radius: 5px; /* Optional: Rounded corners */
-  }
-  
-  .car-details {
-    margin-top: 10px;
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
-    text-align: left;
-  }
-  
-  .car-details h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .car-details p {
-    color: #666;
-    margin-bottom: 5px;
-  }
-  
-  .car-details p:first-of-type {
-    margin-top: 10px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #007bff;
-    display: block;
-    margin-top: 10px;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  input {
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  /* Navbar */
+  font-family: Arial, sans-serif;
+  background-color: #575757;
+  color: #5c5757;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(96, 92, 92, 0.7);
+}
+
+nav a {
+  color: #ede4e4;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+  color: #ffcc00;
+}
+
+nav a.active {
+  background-color: #353227;
+  color: #d9d136;
+  border-radius: 5px;
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(96, 92, 92, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(96, 92, 92, 0.7);
+}
+
+/* Header Styles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffcc00;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* List of Cars Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  background-color: #d3caca;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(131, 120, 120, 0.1);
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Images Styles */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Car Details Styles */
+.car-details {
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.car-details h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.car-details p {
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Links Styles */
+a {
+  text-decoration: none;
+  color: #007bff;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff;
+  color: #e3bbbb;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Input Styles */
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #e6dddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   nav {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
+      flex-direction: column;
   }
-  
+
   nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
+      padding: 15px;
+      text-align: center;
+      width: 100%;
   }
-  
-  nav a.active {
-    background-color: #555;
+
+  li {
+      width: 100%;
+      margin: 10px 0;
   }
-  
-  /* Responsive layout */
-  @media (max-width: 768px) {
-    li {
-      width: 100%; /* Full width on smaller screens */
-    }
-  }
+}

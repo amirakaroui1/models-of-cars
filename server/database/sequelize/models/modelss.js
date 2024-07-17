@@ -27,10 +27,5 @@ remove: function(id, callback) {
         callback(err, result);
     });
 },
-buycar:function(name,email,adress,nameofcar,callback){
-    const sql = `INSERT INTO users (name,email,adress,nameofcar) Values (?,?,?,?)`
-    connection.query(sql,[name,email,adress,nameofcar],(err,result)=>{
-callback(err,result)
-    })
-}
+
 }

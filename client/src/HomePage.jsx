@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Onecar from './Onecar.jsx' 
+import UpdateCar from './UpdateCar.jsx'
 
 
 function HomePage() {
@@ -25,7 +26,7 @@ function HomePage() {
         <ul>
           {cars.map(car => (
             <li key={car.id}>
-              <Link to={`/buy-car/${car.id}`}>
+              <Link to={`/update-car/${car.id}`}>
                 <img src={car.imageUrl} alt={car.name} />
               </Link>
               <div className="car-details">
@@ -36,7 +37,8 @@ function HomePage() {
                 <p><strong>Price:</strong> ${car.avg_price}</p>
                 <p><strong>Horsepower:</strong> {car.avg_horsepower}</p>
               </div>
-              <Onecar el={car} />
+              <Onecar el={car} refresh={refresh} setrefresh={setrefresh} />
+          <UpdateCar el={car} refresh={refresh} setrefresh={setrefresh} />
             </li>
           ))}
         </ul>

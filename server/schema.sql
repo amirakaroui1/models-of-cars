@@ -27,37 +27,12 @@ CREATE TABLE IF NOT EXISTS `modelsofcars`.`cars` (
   `num_model` VARCHAR(255) NULL DEFAULT NULL,
   `description` TEXT NULL DEFAULT NULL,
   `categorie` VARCHAR(255) NULL DEFAULT NULL,
-  `avg_price` FLOAT NULL DEFAULT NULL,
-  `avg_horsepower` FLOAT NULL DEFAULT NULL,
+  `avg_price` VARCHAR(50) NULL DEFAULT NULL,
+  `avg_horsepower` VARCHAR(50) NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX ` name_UNIQUE` (`name` ASC) VISIBLE)
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
-
-
--- -----------------------------------------------------
--- Table `modelsofcars`.`purchases`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `modelsofcars`.`purchases` (
-  `idpurchases` INT NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`idpurchases`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
-
-
--- -----------------------------------------------------
--- Table `modelsofcars`.`users`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `modelsofcars`.`users` (
-  ` iduser` INT NOT NULL AUTO_INCREMENT,
-  ` name` VARCHAR(255) NULL DEFAULT NULL,
-  ` email` VARCHAR(255) NULL DEFAULT NULL,
-  ` address` VARCHAR(255) NULL DEFAULT NULL,
-  PRIMARY KEY (` iduser`))
-ENGINE = InnoDB
-AUTO_INCREMENT = 2
+AUTO_INCREMENT = 12
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
